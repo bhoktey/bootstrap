@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <!-- bootstrap css cdn link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <!-- bootstrap icon cdn link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <style>
+    .custom-page-style:hover {
+      font-weight: bold;
+      color: white !important;
+    }
+
+    .custom-icon {
+      color: gold;
+    }
+    img:hover{
+      transform: scale(2);
+    }
+    .card-image{
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <!--start of navbar  -->
+  <div class="row bg-dark">
+    <div class="col-md-3 p-3 text-center ">
+      <a class="navbar-brand text-white fs-3" href="index.html">OurStore </a>
+    </div>
+    <div class="col-md-6 mt-3">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-success" type="submit">Search</button>
+      </form>
+    </div>
+    <div class="col-md-3 text-white fs-3 mt-3 d-flex justify-content-around">
+      <a href="register.html">
+        <i class="bi bi-person-add text-white"></i></a>
+      <a href="signin.html">
+        <i class="bi bi-box-arrow-in-right text-white"></i></a>
+      <a href="cart.html">
+        <i class="bi bi-cart text-white"></i></a>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg bg-secondary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 d-flex justify-content-around ">
+          <li class="nav-item">
+            <a class="nav-link active custom-page-style" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active custom-page-style" href="product.html">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active custom-page-style" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active custom-page-style" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active custom-page-style" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end of navbar -->
+  <!-- start of main block -->
+  <div class="row">
+    <div class="col-md-3">
+      <h4 class="mt2 ms-2">Deals</h4>
+      <div class="form-check ms-4">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+        <label class="form-check-label" for="flexCheckDefault1">
+          Deals of the Day
+        </label>
+      </div>
+      <div class="form-check ms-4">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+        <label class="form-check-label" for="flexCheckDefault2">
+          Flash Sale
+        </label>
+      </div>
+      <div class="form-check ms-4">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+        <label class="form-check-label" for="flexCheckDefault3">
+          Most Popular
+        </label>
+      </div>
+
+      <h4 class="mt2 ms-2">Category</h4>
+      <div class="form-check ms-4">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+        <label class="form-check-label" for="flexCheckDefault4">
+          Laptops
+        </label>
+      </div>
+      <div class="form-check ms-4">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
+        <label class="form-check-label" for="flexCheckDefault5">
+          Smartphone
+        </label>
+      </div>
+      <div class="form-check ms-4">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault6">
+        <label class="form-check-label" for="flexCheckDefault6">
+          Camer & lens
+        </label>
+      </div>
+      <div class="form-check ms-4">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault7">
+        <label class="form-check-label" for="flexCheckDefault7">
+          Health & Fitness
+        </label>
+      </div>
+      <div class="form-check ms-4">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault8">
+        <label class="form-check-label" for="flexCheckDefault8">
+          Beauty
+        </label>
+      </div>
+
+      <h4 class="mt2 ms-2">Prices</h4>
+      <div class="form-check ms-4">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault9">
+        <label class="form-check-label" for="flexCheckDefault9">
+          Upto $25
+        </label>
+      </div>
+      <div class="form-check ms-4">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault10">
+        <label class="form-check-label" for="flexCheckDefault10">
+          $25-$100
+        </label>
+      </div>
+      <div class="form-check ms-4">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault11">
+        <label class="form-check-label" for="flexCheckDefault11">
+          $100-$500
+        </label>
+      </div>
+      <div class="form-check ms-4">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault12">
+        <label class="form-check-label" for="flexCheckDefault12">
+          $500-$1000
+        </label>
+      </div>
+      <div class="form-check ms-4">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault13">
+        <label class="form-check-label" for="flexCheckDefault13">
+          Above $1000
+        </label>
+      </div>
+
+      <h4 class="mt2 ms-2">Discount's</h4>
+      <div class="form-check ms-4">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+        <label class="form-check-label" for="flexRadioDefault3">
+          Upto 25%
+        </label>
+      </div>
+      <div class="form-check ms-4">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+        <label class="form-check-label" for="flexRadioDefault2">
+          Upto 50%
+        </label>
+      </div>
+      <div class="form-check ms-4">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          50% & Above
+        </label>
+      </div>
+
+      <h4 class="mt2 ms-2">Rating</h4>
+      <div class="icon ms-4 custom-icon">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+      </div>
+      <div class="icon ms-4 custom-icon">
+        <i class="bi bi-star"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+      </div>
+      <div class="icon ms-4 custom-icon">
+        <i class="bi bi-star"></i>
+        <i class="bi bi-star"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+      </div>
+      <div class="icon ms-4 custom-icon">
+        <i class="bi bi-star"></i>
+        <i class="bi bi-star"></i>
+        <i class="bi bi-star"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+      </div>
+      <div class="icon ms-4 custom-icon">
+        <i class="bi bi-star"></i>
+        <i class="bi bi-star"></i>
+        <i class="bi bi-star"></i>
+        <i class="bi bi-star"></i>
+        <i class="bi bi-star-fill"></i>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
+        <div class="col">
+          <div class="card mt-2 shadow-lg rounded-3">
+           <div class="card-image">
+            <img
+              src="https://www.zdnet.com/a/img/resize/06119597d8fde27e3074dc3bb4a9ce0f1851280a/2023/04/24/4e586f53-afa2-452d-baf4-cc7c78c2c5fb/samsung-galaxy-a54-5g.jpg?auto=webp&fit=crop&height=900&width=1200"
+              class="card-img-top" alt="...">
+           </div>
+            
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <button class="btn btn-warning">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mt-2 shadow-lg rounded-3">
+            <div class="card-image">
+              <img
+              src="https://i.guim.co.uk/img/media/2ce8db064eabb9e22a69cc45a9b6d4e10d595f06/392_612_4171_2503/master/4171.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=45b5856ba8cd83e6656fbe5c166951a4"
+              class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <button class="btn btn-warning">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mt-2 shadow-lg rounded-3">
+           <div class="card-image">
+            <img
+            src="https://www.zdnet.com/a/img/resize/a599efb452885d4f668855aea18aae668867a960/2023/02/06/10e9ac75-29ce-4e6c-b2fb-8df48e1e40b0/oneplus-11-never-settle.jpg?auto=webp&fit=crop&height=900&width=1200"
+            class="card-img-top" alt="...">
+           </div>
+           
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content.</p>
+                <button class="btn btn-warning">
+                  Add to Cart
+                </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mt-2 shadow-lg rounded-3">
+            <div class="card-image">
+              <img
+              src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/photography/discover/smartphone-photography/thumbnail.jpeg"
+              class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <button class="btn btn-warning">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mt-2 shadow-lg rounded-3">
+            <div class="card-image">
+              <img
+              src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c21hcnRwaG9uZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+              class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <button class="btn btn-warning">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mt-2 shadow-lg rounded-3">
+            <div class="card-image">
+              <img
+              src="data:image/jpeg;base64,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"
+              class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <button class="btn btn-warning">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mt-2 shadow-lg rounded-3">
+            <div class="card-image">
+              <img
+              src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/photography/discover/smartphone-photography/thumbnail.jpeg"
+              class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <button class="btn btn-warning">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mt-2 shadow-lg rounded-3">
+            <div class="card-image">
+              <img
+              src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/photography/discover/smartphone-photography/thumbnail.jpeg"
+              class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <button class="btn btn-warning">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mt-2 shadow-lg rounded-3">
+            <div class="card-image">
+              <img
+              src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/photography/discover/smartphone-photography/thumbnail.jpeg"
+              class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <button class="btn btn-warning">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mt-2 shadow-lg rounded-3">
+            <div class="card-image">
+              <img
+              src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/photography/discover/smartphone-photography/thumbnail.jpeg"
+              class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <button class="btn btn-warning">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mt-2 shadow-lg rounded-3">
+            <div class="card-image">
+              <img
+              src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/photography/discover/smartphone-photography/thumbnail.jpeg"
+              class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <button class="btn btn-warning">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mt-2 shadow-lg rounded-3">
+            <div class="card-image">
+              <img
+              src="https://www.adobe.com/content/dam/cc/us/en/creativecloud/photography/discover/smartphone-photography/thumbnail.jpeg"
+              class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <button class="btn btn-warning">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end of main block -->
+  <!-- start of footer -->
+  <div class="container-xxl">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="product.html" class="nav-link px-2 text-body-secondary">Product</a></li>
+        <li class="nav-item"><a href="blog.html" class="nav-link px-2 text-body-secondary">Blog</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">About</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-body-secondary">Contact</a></li>
+      </ul>
+      <p class="text-center text-body-secondary">&copy; 2023 Company, Inc</p>
+
+    </footer>
+  </div>
+  <!-- end of footer -->
+  <!-- bootstrap js cdn link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
